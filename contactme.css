@@ -1,0 +1,10 @@
+a{
+  text-decoration: none; !important
+}
+body{
+
+    background-image: url('https://images.pexels.com/photos/681073/pexels-photo-681073.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+}
+.form-control{
+  width:30%;
+}
