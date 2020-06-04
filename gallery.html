@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    <title>Gallery</title>
+</head>
+<body>
+  <div class="wrapper">
+      <nav id="sidebar">
+          <div class="sidebar-header">
+              <h3>HELLO!</h3>
+          </div>
+
+          <ul class="list-unstyled components">
+              <li class="active">
+                  <a href="index.html">Home</a>
+              </li>
+              <li>
+                  <a href="aboutme.html">About Me</a>
+              </li>
+              <li>
+                  <a href="work.html">WORKS</a>
+              </li>
+                <li>
+                  <a href="gallery.html">Gallery</a>
+                </li>
+
+              <li>
+                  <a href="contactme.html">Contact Me</a>
+              </li>
+
+          </ul>
+
+
+      </nav>
+
+
+      <div id="content">
+
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <div class="container-fluid">
+
+                  <button type="button" id="sidebarCollapse" class="navbar-btn">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                  </button>
+                  <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <i class="fas fa-align-justify"></i>
+                  </button>
+
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="nav navbar-nav ml-auto">
+                          <li class="nav-item active">
+                              <a class="nav-link" href="games.html">JS Games!</a>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </nav>
+<h2>Gallery</h2>
+<p>Represents some of my work.</p>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="images/drumkit.png" style="width:100%">
+  <div class="text" style='color:black'>Play drums using keys or clicking tiles!</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="images/arduino.png" style="width:100%">
+  <div class="text" style='color:black'>Using 74HC595 Register to light up LEDs</div>
+</div>
+
+<div class="mySlides fade">
+
+  <div class="numbertext">3 / 4</div>
+  <img src="images/img.png" style="width:100%">
+  <div class="text" id=""style='color:black'>Django Based Image Sharing Application Built by me</div>
+</div>
+<div class="mySlides fade">
+
+  <div class="numbertext">4 /4</div>
+  <img src="images/dice.png" style="width:100%">
+  <div class="text" style='color:black'>Simple Dice Game.Refresh it to find out whether you win.</div>
+</div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#sidebarCollapse').on('click', function () {
+            $('#sidebar').toggleClass('active');
+            $(this).toggleClass('active');
+        });
+    });
+</script>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000);
+}
+</script>
+
+</ body>
+</ html>

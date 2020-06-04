@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="contactme.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-    <title>Contact Me</title>
+    <title>Gallery</title>
 </head>
 <body>
   <div class="wrapper">
@@ -23,7 +21,7 @@
                   <a href="index.html">Home</a>
               </li>
               <li>
-                  <a href="aboutme.html">About Me </a>
+                  <a href="aboutme.html">About Me</a>
               </li>
               <li>
                   <a href="work.html">WORKS</a>
@@ -40,6 +38,8 @@
 
 
       </nav>
+
+
       <div id="content">
 
           <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -57,35 +57,33 @@
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                       <ul class="nav navbar-nav ml-auto">
                           <li class="nav-item active">
-                              <a class="nav-link" href="games.html">JS Games!</a>
+                              <a class="nav-link" href="index.html">Back To Home</a>
                           </li>
                       </ul>
                   </div>
               </div>
           </nav>
+          <h3>Dice Game</h3>
+          <p>A simple game to play when Bored. Refresh it to play each time.</p>
+          <a href='https://dazedtiara6667.github.io/Dice-Game/'>Dice Game</a>
+          <br>
+          <br>
+          <h3>Drum Kit </h3>
+          <p>Enjoy playing drums using this Drum-Kit. Hope you like it...</p>
+          <a href='https://dazedtiara6667.github.io/Drum-Kit/'>Drum-Kit</a>
+          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
-      <div class='contact'>
-          <h1>Wanna Talk?</h1>
-      <form name = "myform" id="myform" action="mailto:rishabmudliar@gmail.com">
-        <div class="form-group">
-          <label for="exampleInputEmail1">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" action="" method = "get" aria-describedby="emailHelp" placeholder="Enter email" name="email" >
-          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-        </div>
-        <div class="form-group">
-          <label for="exampleInputPassword1">Query</label>
-          <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter your query" name ="query">
-        </div>
-        <input type="reset" class="btn btn-primary" onClick = "validateform();" value ="Submit">
-      </form>
-      </div>
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
 
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-
-
-      <script src='contactme.js'></script>
+          <script type="text/javascript">
+              $(document).ready(function () {
+                  $('#sidebarCollapse').on('click', function () {
+                      $('#sidebar').toggleClass('active');
+                      $(this).toggleClass('active');
+                  });
+              });
+          </script>
 </body>
 </html>
