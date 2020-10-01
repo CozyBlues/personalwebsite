@@ -1,2 +1,2 @@
 # UID
-Consists of my Project Related UI Design.
+This repository consists of my Ui design course project.
